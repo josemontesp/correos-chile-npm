@@ -1,14 +1,14 @@
-## Seguimiento de pedidos de Correos de Chile
+# Seguimiento de pedidos de Correos de Chile
 
 Módulo npm para hacer el seguimiento de uno o más pedidos de Correos de Chile.
 
-###Instalación
+##Instalación
 
 ```
 $ npm install correos-chile --save
 ```
 
-###Uso
+##Uso
 
 ```javascript
 var correos = require('correos-chile');
@@ -89,7 +89,7 @@ correos(['RS458239104NL']).then(r=>{
 
 ```
 
-###Consideraciones
+##Consideraciones
 La cantidad de códigos de seguimiento ingresados no se controla por el programa. Puede que si se abusa de la consulta Correos de Chile controle su uso. Usar con discresión.
 
 
