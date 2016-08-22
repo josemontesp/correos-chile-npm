@@ -90,6 +90,6 @@ correos(['RS458239104NL']).then(r=>{
 ```
 
 ##Consideraciones
-La cantidad de códigos de seguimiento ingresados no se controla por el programa. Puede que si se abusa de la consulta Correos de Chile controle su uso. Usar con discresión.
+La cantidad de códigos de seguimiento ingresados no se controla por el programa. Puede que si se abusa de la consulta Correos de Chile controle su uso. Usar con discreción.
 
 
