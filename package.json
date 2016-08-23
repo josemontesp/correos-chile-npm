@@ -1,6 +1,6 @@
 {
   "name": "correos-chile",
-  "version": "1.2.1",
+  "version": "1.2.2",
   "description": "Paquete para seguimiento de pedidos de correos de Chile",
   "main": "index.js",
   "keywords": [
