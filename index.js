@@ -1,5 +1,4 @@
 var cheerio = require('cheerio');
-var express = require('express');
 var request = require('request');
 
 var constantes = {
