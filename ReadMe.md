@@ -21,7 +21,7 @@ correos(['RS458239104NL']).then(r=>{
 ```
 
 
-**Función principal:** Recibe un arreglo de códigos de seguimiento y retorna un arreglo de promesas con la información para cada código de seguimiento
+**Función principal:** Recibe un arreglo de códigos de seguimiento y retorna una promesa con un arreglo con la información para cada código de seguimiento
 
 **Params**
 

@@ -2,12 +2,14 @@ var cheerio = require('cheerio');
 var request = require('request');
 
 var constantes = {
-	url : 'http://seguimientoweb.correos.cl/ConEnvCorreos.aspx'
-}
+	url : 'http://seguimientoweb.correos.cl/ConEnvCorreos.aspx',
+	method: 'POST',
+	headers: {'Connection':'Close'}
+};
 
 function getTrackingInfo(trackingNumber){
 	return new Promise(function(resolve, reject){
-		request.post(constantes.url, function(error, response, body){
+		request.post(constantes, function(error, response, body){
 			if (error) {
 				reject(error);
 				return;
