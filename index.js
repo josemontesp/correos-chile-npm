@@ -17,11 +17,9 @@ function getTrackingInfo(trackingNumber){
 			try{
 				var $ = cheerio.load(body);
 				if ($('.envio_no_existe').text()){
-					//console.log($('.envio_no_existe').text());
-					resolve('El numero de seguimiento no existe');
+					resolve('El número de seguimiento no existe.');
 					return;
 				}
-				
 				var entradas = [];
 				cheerio.load($('.tracking').html())('tr').each(function(){
 					var entrada = { 
@@ -32,7 +30,6 @@ function getTrackingInfo(trackingNumber){
 					if (entrada.estado)
 						entradas.push(entrada);
 				});
-				// console.log(entradas);
 				var keys = [];
 				var values = [];
 				$('.datosgenerales td').each(function(a){
@@ -61,17 +58,8 @@ function getTrackingInfo(trackingNumber){
 	});
 }
 
-
-
-
 module.exports = function(trackingIdArray){
 	return Promise.all(trackingIdArray.map(t=>{
 		return getTrackingInfo(t);
 	}));
 }
-
-
-
-
-
-
